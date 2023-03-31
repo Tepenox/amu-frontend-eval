@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import ClientsList from "../components/ClientsList";
 import InvoicesList from "../components/InvoiceList";
@@ -11,17 +11,19 @@ const ClientDetailsPage = () => {
     const params = useParams();
     const clientId = params.id
     useEffect(() => {
-        // Appel HTTP vers Supabase
         getClientFromApi(clientId)
             .then((items) => {
-                // On remplace la valeur actuel de state
-                // par le tableau d'items venant de l'API
                 setClient(items[0])                
             });
     }, []);
 
         return <>
+        <Link to="/">
+        <button>return to customers List</button>
+      </Link>
+            <div>
             <strong>invoices of  {client.fullName}</strong>
+            </div>
             <InvoicesList clientId = {clientId}/>
         </>
 

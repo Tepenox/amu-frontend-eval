@@ -39,6 +39,7 @@ const InvoiceForm = (props) => {
               value={sum}
               onChange = {updateSum}
             />
+            
             <select value={status} onChange={ updateStatus} name="status" id="status" >
                 <option value="pending">Pending</option>
                 <option value="payed">Payed</option>

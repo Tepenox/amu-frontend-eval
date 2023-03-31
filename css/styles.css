@@ -51,9 +51,25 @@
   
   form {
     display: flex;
+    flex-wrap: wrap;
+
   }
   
   form input {
+    flex: 1;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0;
+    margin-right: 5px;
+  }
+  form select {
+    flex: 1;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0;
+    margin-right: 5px;
+  }
+  form button {
     flex: 1;
     padding: 5px;
     border-radius: 5px;
@@ -81,3 +97,4 @@
   label {
     cursor: pointer;
   }
+
