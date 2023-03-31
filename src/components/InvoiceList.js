@@ -21,14 +21,14 @@ const InvoicesList = (props) => {
     
 
  
-    return <><ul>
+    return <>
+    <table></table>
+    <ul>
         {state.map(item => <li key={item.id}>
             {item.sum} {item.status}
         </li>)}
     </ul>
-    <Link to= {"/"+props.clientId+"/invoices/create"}>
-        <button>add invoice</button>
-      </Link>
+    
     </>;
 
 

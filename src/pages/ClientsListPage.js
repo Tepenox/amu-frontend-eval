@@ -7,7 +7,7 @@ const ClientListPage = () => {
     return <>
         <ClientsList />
         <Link to="/create">
-        <button>Create Customer</button>
+        <button>Créer un client</button>
       </Link>
     </>
 }

@@ -28,7 +28,7 @@ const ClientForm = () => {
           
             <input 
               type="text" 
-              name="fullname-text" 
+              name="fullName" 
               placeholder="full name" 
               value={fullName}
               onChange = {updateFullName}
@@ -36,13 +36,13 @@ const ClientForm = () => {
            
             <input 
               type="email" 
-              name="mail-text" 
+              name="email" 
               placeholder="mail" 
               value={email}
               onChange = {updateMail}
             />
 
-            <button>Ajouter</button>
+            <button>Enregistrer</button>
         </form>
     </>
 

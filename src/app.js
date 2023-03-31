@@ -25,7 +25,7 @@ const App = () => {
                 element={<ClientListPage />}
             />
              <Route
-                path="/:idcustomer/invoices/create"
+                path="/:idcustomer/invoices/add"
                 element={<InvoiceCreatePage />}
             />
         </Routes>

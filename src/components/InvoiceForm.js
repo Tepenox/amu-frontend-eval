@@ -34,19 +34,19 @@ const InvoiceForm = (props) => {
           
             <input 
               type="number" 
-              name="sum-number" 
+              name="amount" 
               placeholder="sum number" 
               value={sum}
               onChange = {updateSum}
             />
             
             <select value={status} onChange={ updateStatus} name="status" id="status" >
-                <option value="pending">Pending</option>
-                <option value="payed">Payed</option>
+                <option value="SENT">Sent</option>
+                <option value="PAID">Paid</option>
             </select>
 
 
-            <button>Ajouter</button>
+            <button>Enregistrer la facture</button>
         </form>
     </>
 

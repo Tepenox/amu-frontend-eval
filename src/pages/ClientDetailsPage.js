@@ -19,12 +19,15 @@ const ClientDetailsPage = () => {
 
         return <>
         <Link to="/">
-        <button>return to customers List</button>
+        <button>Retour aux clients</button>
       </Link>
             <div>
-            <strong>invoices of  {client.fullName}</strong>
+            <strong>invoices of  {client.fullName} {client.email}</strong>
             </div>
             <InvoicesList clientId = {clientId}/>
+            <Link to= {"/"+clientId+"/invoices/add"}>
+        <button>Créer une facture</button>
+      </Link>
         </>
 
 }
